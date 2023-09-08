@@ -170,10 +170,10 @@ class LogicCalculator {
       });
     });
   }
-  //  потрібно доопрацювати з мінусом щоб він конкатенувався до pi або e
+ 
   static checkPiOrE() {
     if (this.value === "Pi" || this.value === "e") {
-      // конкатенація яка потребує доробки перестає роботи множення на число або саме на себе!!!
+      
       let sign = "";
       const operatorOrNot = this.middleRes[this.middleRes.length - 2];
       if (
@@ -281,19 +281,19 @@ class LogicCalculator {
       this.value !== "." &&
       this.value !== "(" &&
       this.value !== ")" &&
-      this.value !== "Inv" &&
+      this.value !== "10ˣ" &&
       this.value !== "Ans" &&
       this.value !== "EXP" &&
-      this.value !== "tan" &&
-      this.value !== "cos" &&
-      this.value !== "sin" &&
-      this.value !== "Rad" &&
-      this.value !== "Deg" &&
+      this.value !== "√x" &&
+      this.value !== "³√x" &&
+      this.value !== "ʸ√x" &&
+      this.value !== "x²" &&
+      this.value !== "x³" &&
       this.value !== "X!" &&
       this.value !== "ln" &&
       this.value !== "log" &&
-      this.value !== "sqrt" &&
-      this.value !== "xy" &&
+      this.value !== "Rand" &&
+      this.value !== "xʸ" &&
       this.value !== "%"
     ) {
       this.checkConstans = false;
